@@ -6,8 +6,8 @@ export default class Home extends Component {
     return (
       <div>
         <TitlePicture />
-        <Whatis />
         <HowDif />
+        <Whatis />
         <Demos />
         <Setup />
         <PoweredBy />
@@ -20,28 +20,12 @@ export default class Home extends Component {
 class TitlePicture extends Component {
   render() {
     return (
-      <div style={{background: "#446889", height: "600px", width: "100%", position: "absolute", textAlign: "center", paddingTop: "50px", color: "white", zIndex: "10"}}>
-        <a href="https://github.com/you"><img style={{position: "absolute", top: "0", right: "0", border:"0"}} src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /></a>
+      <div style={{background: "#446889", height: "700px", width: "100%", position: "absolute", textAlign: "center", paddingTop: "50px", color: "white", zIndex: "10"}}>
+        <a href="https://github.com/jparkhurst3/Thundercats_LionPing"><img style={{position: "absolute", top: "0", right: "0", border:"0"}} src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /></a>
           <div style={{width: "30%", margin: "0 auto"}}>
             <Logo />
           </div>
-        <h1>Incident Management Solution</h1>
-        <h3><i>"I just can't wait to be pinged!"</i></h3>
-      </div>
-    )
-  }
-}
-
-class Whatis extends Component {
-  render() {
-    return (
-      <div class="whiteSection" style={{paddingTop:"600px"}}>
-      <div class="sectionWrapper">
-        <h2>What is Incident Management?</h2>
-        <p class="longtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
-        </p>
-        </div>
+        <h1>Step away from <strong>managing</strong> incidents. <br /> Focus on <strong>solving</strong> incidents</h1>
       </div>
     )
   }
@@ -50,12 +34,32 @@ class Whatis extends Component {
 class HowDif extends Component {
   render() {
     return (
+      <div class="whiteSection" style={{paddingTop:"700px"}}>
+      <div class="sectionWrapper">
+        <h2 style={{fontSize:"50px"}}>Apart from the Pride</h2>
+        <p class="longtext">
+          Lion Ping is a new incident management (IcM) solution focused on simplicity,
+          ease of use, and customized setups. Many other IcM solutions are too complex
+          and too expensive for the needs of most teams. Lion Ping looks
+        </p>
+        </div>
+      </div>
+    )
+  }
+}
+
+class Whatis extends Component {
+  render() {
+    return (
       <div class="graySection">
       <div class="sectionWrapper">
-
-        <h2>What Sets Lion Ping Apart from the Pride?</h2>
+        <h2>Incident Management with Lion Ping</h2>
         <p class="longtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
+          An incident is an event that could lead to loss of, or disruption to,
+          an organization operations, services or functions. If not managed an
+          incident can escalate into an emergency, crisis or a disaster. Incident
+          management is therefore the process of limiting the potential disruption
+          caused by such an event, followed by a return to business as usual.
         </p>
         </div>
       </div>
@@ -106,6 +110,7 @@ class Demos extends Component {
   render() {
     return (
       <div class="whiteSection">
+        <h2>Showcase</h2>
         <div style={{display:"inline-block"}}>
           <DemoBlock icon={<i class="fa fa-tachometer fa-5x" aria-hidden="true"></i>} name="Dashboard" onClick={this.onDashClick} active={this.state.active == 1} />
           <DemoBlock icon={<i class="fa fa-database fa-5x" aria-hidden="true"></i>} name="Services & Escalation Policies" onClick={this.onServicesClick} active={this.state.active == 2} />
@@ -142,7 +147,9 @@ class DashInfo extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
           </p>
         </div>
-        <img style={{width:"60%"}} src="../assets/Dash.png" />
+        <div style={{width:"60%", float:"right"}} >
+          <img style={{width:"100%"}} src="../assets/Dash.png" />
+        </div>
       </div>
     )
   }
@@ -162,7 +169,9 @@ class ServicesInfo extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
           </p>
         </div>
-        <img style={{width:"60%"}} src="../assets/Services.png" />
+        <div style={{width:"60%", float:"right"}} >
+          <img style={{width:"100%"}} src="../assets/Services.png" />
+        </div>
       </div>
     )
   }
@@ -183,8 +192,8 @@ class TeamsInfo extends Component {
           </p>
         </div>
         <div style={{width:"60%", float:"right"}} >
-          <img style={{width:"100%"}} src="../assets/Teams.png" />
-          <img style={{width:"100%"}} src="../assets/Schedule.png" />
+          <img id="limg" src="../assets/Teams.png" />
+          <img id="rimg" src="../assets/Schedule.png" />
         </div>
 
       </div>
@@ -237,10 +246,13 @@ class PoweredBy extends Component {
     return (
       <div class="whiteSection">
       <div class="sectionWrapper">
-
         <h2>Powered By</h2>
-        <p class="longtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
+        <p class="longtext" style={{textAlign:"center"}}>
+          <img src="../assets/react.png" />
+          <img src="../assets/nodejs.png" />
+          <img src="../assets/mysql.png" />
+          <img src="../assets/twilio.png" />
+          <img src="../assets/slack.png" />
         </p>
         </div>
       </div>
@@ -253,10 +265,9 @@ class MoreInfo extends Component {
     return (
       <div class="graySection">
       <div class="sectionWrapper">
-
-        <h2>More Info</h2>
+        <h2>About the Devs</h2>
         <p class="longtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
+          Lion Ping is the result of a year long Senior Design project by Chris Clegg, Sam Ford, Zach Hancock, Hokeun Kim, and Joanna Parkhurst at Georgia Tech, from the Fall of 2016, to the Spring of 2017.
         </p>
         </div>
 

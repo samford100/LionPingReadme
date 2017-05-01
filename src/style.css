@@ -48,8 +48,29 @@ html * {
   color:#446889;
 }
 
+.longtext img {
+  width: 20%;
+}
+
+.whiteSection img {
+  padding: 10px;
+}
+
+.graySection img {
+  padding: 10px;
+}
+
+#limg {
+  width: 70%
+}
+
+#rimg {
+  width: 30%;
+}
+
+
 .sectionWrapper {
-  width:95%;
+  width:75%;
   margin: 0 auto;
 }
 
