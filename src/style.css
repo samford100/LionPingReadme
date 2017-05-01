@@ -1,0 +1,92 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+/*
+ * Typography
+ */
+
+/*h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}*/
+
+/*
+image postioning
+*/
+
+html * {
+  font-family: "Raleway", sans-serif;
+}
+
+.graySection {
+  position: relative;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: #fafafa;
+  border-top: 1px solid #ebebeb;
+}
+
+.whiteSection {
+  position: relative;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #ebebeb;
+}
+
+.demo-block {
+  position:relative;
+  height: 200px;
+  width: 200px;
+  margin:20px;
+  padding-top:10px;
+  float: left;
+  border-radius: 5px;
+  background:#ebebeb;
+  text-align: center;
+  color:#446889;
+}
+
+.demo-block:hover {
+  position:relative;
+  height: 200px;
+  width: 200px;
+  margin:20px;
+  padding-top:10px;
+  float: left;
+  border-radius: 5px;
+  background: #D4A461;
+  color:#446889;
+}
+
+.demo-block-active {
+  position:relative;
+  height: 200px;
+  width: 200px;
+  margin:20px;
+  padding-top:10px;
+  float: left;
+  border-radius: 5px;
+  background: #D4A461;
+  color:#446889;
+}
+
+
+.footer {
+  position: absolute;
+  top:92vh;
+  bottom: 0vh;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
