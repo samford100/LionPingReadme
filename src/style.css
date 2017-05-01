@@ -43,6 +43,23 @@ html * {
   border-top: 1px solid #ebebeb;
 }
 
+.longtext i {
+  margin: 5%;
+  color:#446889;
+}
+
+.sectionWrapper {
+  width:95%;
+  margin: 0 auto;
+}
+
+.longtext {
+  margin: 0 auto;
+  text-align:justify;
+  font-size: 20px;
+  margin-bottom:0px;
+}
+
 .demo-block {
   position:relative;
   height: 200px;

@@ -20,7 +20,7 @@ export default class Home extends Component {
 class TitlePicture extends Component {
   render() {
     return (
-      <div style={{background: "#446889", height: "600px", width: "100%", position: "absolute", textAlign: "center", paddingTop: "50px", color: "white"}}>
+      <div style={{background: "#446889", height: "600px", width: "100%", position: "absolute", textAlign: "center", paddingTop: "50px", color: "white", zIndex: "10"}}>
         <a href="https://github.com/you"><img style={{position: "absolute", top: "0", right: "0", border:"0"}} src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /></a>
           <div style={{width: "30%", margin: "0 auto"}}>
             <Logo />
@@ -35,11 +35,13 @@ class TitlePicture extends Component {
 class Whatis extends Component {
   render() {
     return (
-      <div style={{position: "relative", paddingTop:"600px", marginTop:"0px", textAlign: "center", borderTop: "1px solid #ebebeb", paddingBottom: "10px"}}>
+      <div class="whiteSection" style={{paddingTop:"600px"}}>
+      <div class="sectionWrapper">
         <h2>What is Incident Management?</h2>
-        <p style={{paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", marginBottom:"0px"}}>
+        <p class="longtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
         </p>
+        </div>
       </div>
     )
   }
@@ -49,10 +51,13 @@ class HowDif extends Component {
   render() {
     return (
       <div class="graySection">
+      <div class="sectionWrapper">
+
         <h2>What Sets Lion Ping Apart from the Pride?</h2>
-        <p style={{paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", marginBottom:"0px"}}>
+        <p class="longtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
         </p>
+        </div>
       </div>
     )
   }
@@ -131,7 +136,7 @@ class DashInfo extends Component {
     return (
       <div class="whiteSection" style={{border:"none", textAlign:"justify", display:"inline-block"}}>
         <div style={{float:"left", width: "40%",paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", paddingBottom:"0px"}}>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>The Dashboard </strong>
             shows all the information you need ...
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
@@ -148,11 +153,11 @@ class ServicesInfo extends Component {
     return (
       <div class="whiteSection" style={{border:"none", textAlign:"justify", display: "inline-block"}}>
         <div style={{float:"left", width: "40%",paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", paddingBottom:"0px"}}>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>Services </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
           </p>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>Escalation Policies </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
           </p>
@@ -168,11 +173,11 @@ class TeamsInfo extends Component {
     return (
       <div class="whiteSection" style={{border:"none", textAlign:"justify", display:"inline-block"}}>
         <div style={{float:"left", width: "40%",paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", paddingBottom:"0px"}}>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>Teams </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
           </p>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>Schedules </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
           </p>
@@ -192,9 +197,15 @@ class PingsInfo extends Component {
     return (
       <div class="whiteSection" style={{border:"none", textAlign:"justify", display:"inline-block"}}>
         <div style={{float:"left", width: "40%",paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", paddingBottom:"0px"}}>
-          <p>
+          <p class="longtext">
             <strong style={{fontSize: "30px"}}>Pings </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
+          </p>
+          <p class="longtext" style={{textAlign:"center"}}>
+            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-slack fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-comment fa-2x" aria-hidden="true"></i>
           </p>
         </div>
         <div style={{width:"60%", float:"right"}} >
@@ -210,10 +221,12 @@ class Setup extends Component {
   render() {
     return (
       <div class="graySection">
-        <h2>Setup and Deployment</h2>
-        <p style={{paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", marginBottom:"0px"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
-        </p>
+        <div class="sectionWrapper">
+          <h2>Setup and Deployment</h2>
+          <p class="longtext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
+          </p>
+        </div>
       </div>
     )
   }
@@ -223,10 +236,13 @@ class PoweredBy extends Component {
   render() {
     return (
       <div class="whiteSection">
+      <div class="sectionWrapper">
+
         <h2>Powered By</h2>
-        <p style={{paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", marginBottom:"0px"}}>
+        <p class="longtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
         </p>
+        </div>
       </div>
     )
   }
@@ -236,10 +252,14 @@ class MoreInfo extends Component {
   render() {
     return (
       <div class="graySection">
+      <div class="sectionWrapper">
+
         <h2>More Info</h2>
-        <p style={{paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", marginBottom:"0px"}}>
+        <p class="longtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci. Praesent mollis lorem vitae urna molestie, at condimentum magna accumsan. Morbi non nulla ullamcorper ligula tempor blandit. Integer nisl risus, semper ut libero sit amet, luctus tristique justo. In at euismod mi. Duis pretium dignissim nisl.
         </p>
+        </div>
+
       </div>
     )
   }
