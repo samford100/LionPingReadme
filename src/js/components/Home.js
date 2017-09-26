@@ -21,10 +21,10 @@ class TitlePicture extends Component {
   render() {
     return (
       <div style={{background: "#446889", height: "700px", width: "100%", position: "absolute", textAlign: "center", paddingTop: "50px", color: "white", zIndex: "10"}}>
-        <a href="https://github.com/jparkhurst3/Thundercats_LionPing"><img style={{position: "absolute", top: "0", right: "0", border:"0"}} src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /></a>
-          <div style={{width: "30%", margin: "0 auto"}}>
-            <Logo />
-          </div>
+        <a href="https://github.com/jparkhurst3/Thundercats_LionPing"><img style={{position: "absolute", top: "0", right: "0", border: "0", width: "149px", height:"149px"}} src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub" /></a>
+        <div style={{width: "30%", margin: "0 auto"}}>
+          <Logo />
+        </div>
         <h1>Step away from <strong>managing</strong> incidents. <br /> Focus on <strong>solving</strong> incidents</h1>
       </div>
     )
@@ -53,7 +53,7 @@ class Whatis extends Component {
     return (
       <div class="graySection">
       <div class="sectionWrapper">
-        <h2>Incident Management with Lion Ping</h2>
+        <h1>Incident Management with Lion Ping</h1>
         <p class="longtext">
           An incident is an event that could lead to loss of, or disruption to,
           an organization operations, services or functions. If not managed an
@@ -110,7 +110,7 @@ class Demos extends Component {
   render() {
     return (
       <div class="whiteSection">
-        <h2>Showcase</h2>
+        <h1>Showcase</h1>
         <div style={{display:"inline-block"}}>
           <DemoBlock icon={<i class="fa fa-tachometer fa-5x" aria-hidden="true"></i>} name="Dashboard" onClick={this.onDashClick} active={this.state.active == 1} />
           <DemoBlock icon={<i class="fa fa-database fa-5x" aria-hidden="true"></i>} name="Services & Escalation Policies" onClick={this.onServicesClick} active={this.state.active == 2} />
@@ -181,7 +181,7 @@ class TeamsInfo extends Component {
   render() {
     return (
       <div class="whiteSection" style={{border:"none", textAlign:"justify", display:"inline-block"}}>
-        <div style={{float:"left", width: "40%",paddingLeft:"40px", paddingRight:"40px", fontSize: "20px", paddingBottom:"0px"}}>
+        <div style={{float:"left", width: "36%",paddingLeft:"2%", paddingRight:"2%", fontSize: "20px", paddingBottom:"0px"}}>
           <p class="longtext">
             <strong style={{fontSize: "30px"}}>Teams </strong>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut leo et urna luctus viverra ut et arcu. Aenean rutrum ultricies enim sit amet egestas. Nullam hendrerit leo at mauris lacinia posuere. Etiam cursus felis ut lobortis varius. Morbi a finibus orci.
@@ -218,7 +218,7 @@ class PingsInfo extends Component {
           </p>
         </div>
         <div style={{width:"60%", float:"right"}} >
-          <img style={{width:"30%"}} src="../assets/iPhone.png" />
+          <img style={{width:"30%"}} src="../assets/iPhoneGold.png" />
           <img style={{width:"70%"}} src="../assets/Pings2.png" />
         </div>
       </div>
@@ -247,7 +247,7 @@ class PoweredBy extends Component {
       <div class="whiteSection">
       <div class="sectionWrapper">
         <h2>Powered By</h2>
-        <p class="longtext" style={{textAlign:"center"}}>
+        <p class="longtext powered" style={{textAlign:"center"}}>
           <img src="../assets/react.png" />
           <img src="../assets/nodejs.png" />
           <img src="../assets/mysql.png" />

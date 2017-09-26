@@ -48,8 +48,13 @@ html * {
   color:#446889;
 }
 
-.longtext img {
+.powered {
+  display:inline-block;
+}
+
+.powered img {
   width: 20%;
+  padding:0px!important;
 }
 
 .whiteSection img {
